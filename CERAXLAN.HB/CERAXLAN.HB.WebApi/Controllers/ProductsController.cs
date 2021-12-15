@@ -1,4 +1,5 @@
-﻿using CERAXLAN.HB.Entities.Concrete;
+﻿using CERAXLAN.HB.Business.Abstract;
+using CERAXLAN.HB.Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,24 +13,42 @@ namespace CERAXLAN.HB.WebApi.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        //private readonly IProductService _productService;
+        private readonly IProductService _productService;
 
-        //public ProductsController(IProductService productService)
-        //{
-        //    _productService = productService;
-        //}
+        public ProductsController(IProductService productService)
+        {
+            _productService = productService;
+        }
 
         [HttpGet("{productCode}", Name = "GetProduct")]
         public IActionResult GetProduct(string productCode)
         {
-            return Ok();
+            return Ok(_productService.Get(productCode));
+        }
+
+        [HttpGet]
+        public IActionResult GetProducts()
+        {
+            return Ok(_productService.GetAll());
         }
 
         [HttpPost]
-        public IActionResult AddProduct(Product product)
+        public IActionResult CreateProduct(Product product)
+        {         
+            return Ok(_productService.Create(product));
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteProduct(Product product)
         {
-            //_productService.Add(product);
-            return CreatedAtRoute("GetProduct", new { productCode = product.ProductCode }, product);
+            _productService.Delete(product);
+            return NoContent();
+        }
+
+        [HttpPut]
+        public IActionResult UpdateProduct(Product product)
+        {
+            return Ok(_productService.Update(product));
         }
 
     }

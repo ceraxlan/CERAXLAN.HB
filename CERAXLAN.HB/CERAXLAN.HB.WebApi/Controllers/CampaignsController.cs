@@ -1,4 +1,5 @@
-﻿using CERAXLAN.HB.Entities.Concrete;
+﻿using CERAXLAN.HB.Business.Abstract;
+using CERAXLAN.HB.Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,24 +13,42 @@ namespace CERAXLAN.HB.WebApi.Controllers
     [ApiController]
     public class CampaignsController : ControllerBase
     {
-        //private readonly ICampaignService _campaignService;
+        private readonly ICampaignService _campaignService;
 
-        //public CampaignsController(ICampaignService campaignService)
-        //{
-        //    _campaignService = campaignService;
-        //}
+        public CampaignsController(ICampaignService campaignService)
+        {
+            _campaignService = campaignService;
+        }
 
         [HttpGet("{name}", Name = "GetCampaign")]
         public IActionResult GetCampaign(string name)
         {
-            return Ok();
+            return Ok(_campaignService.Get(name));
+        }
+
+        [HttpGet]
+        public IActionResult GetCampaigns()
+        {
+            return Ok(_campaignService.GetAll());
         }
 
         [HttpPost]
-        public IActionResult AddCampaign(Campaign campaign)
+        public IActionResult CreateCampaign(Campaign campaign)
         {
-            //_campaignService.Add(campaign);
-            return CreatedAtRoute("GetCampaign", new { name = campaign.Name }, campaign);
+            return Ok(_campaignService.Create(campaign));
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteCampaign(Campaign campaign)
+        {
+            _campaignService.Delete(campaign);
+            return NoContent();
+        }
+
+        [HttpPut]
+        public IActionResult UpdateCampaign(Campaign campaign)
+        {
+            return Ok(_campaignService.Update(campaign));
         }
     }
 }

@@ -87,7 +87,6 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tes
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\bin\Debug\net5.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\bin\Debug\net5.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\obj\Debug\net5.0\CERAXLAN.HB.Business.Tests.csproj.AssemblyReference.cache
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\obj\Debug\net5.0\CERAXLAN.HB.Business.Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\obj\Debug\net5.0\CERAXLAN.HB.Business.Tests.AssemblyInfoInputs.cache
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\obj\Debug\net5.0\CERAXLAN.HB.Business.Tests.AssemblyInfo.cs

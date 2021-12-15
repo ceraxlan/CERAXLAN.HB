@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CERAXLAN.HB.Business\CERAXLAN.HB.Business.csproj" />
     <ProjectReference Include="..\CERAXLAN.HB.Entities\CERAXLAN.HB.Entities.csproj" />
   </ItemGroup>
 

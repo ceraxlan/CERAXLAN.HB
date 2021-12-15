@@ -1,3 +1,7 @@
+using CERAXLAN.HB.Business.Abstract;
+using CERAXLAN.HB.Business.Concrete;
+using CERAXLAN.HB.DataAccess.Abstract;
+using CERAXLAN.HB.DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +32,14 @@ namespace CERAXLAN.HB.WebApi
         {
 
             services.AddControllers();
+
+            services.AddScoped<IProductService, ProductManager>();
+            services.AddScoped<IProductDal, EfProductDal>();
+            services.AddScoped<IOrderService, OrderManager>();
+            services.AddScoped<IOrderDal, EfOrderDal>();
+            services.AddScoped<ICampaignService, CampaignManager>();
+            services.AddScoped<ICampaignDal, EfCampaignDal>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CERAXLAN.HB.WebApi", Version = "v1" });
