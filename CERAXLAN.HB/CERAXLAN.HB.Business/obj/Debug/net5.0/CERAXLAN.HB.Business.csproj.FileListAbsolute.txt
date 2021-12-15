@@ -1,0 +1,12 @@
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\bin\Debug\net5.0\CERAXLAN.HB.Business.deps.json
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\bin\Debug\net5.0\CERAXLAN.HB.Business.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\bin\Debug\net5.0\ref\CERAXLAN.HB.Business.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\bin\Debug\net5.0\CERAXLAN.HB.Business.pdb
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\obj\Debug\net5.0\CERAXLAN.HB.Business.csproj.AssemblyReference.cache
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\obj\Debug\net5.0\CERAXLAN.HB.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\obj\Debug\net5.0\CERAXLAN.HB.Business.AssemblyInfoInputs.cache
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\obj\Debug\net5.0\CERAXLAN.HB.Business.AssemblyInfo.cs
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\obj\Debug\net5.0\CERAXLAN.HB.Business.csproj.CoreCompileInputs.cache
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\obj\Debug\net5.0\CERAXLAN.HB.Business.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\obj\Debug\net5.0\ref\CERAXLAN.HB.Business.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business\obj\Debug\net5.0\CERAXLAN.HB.Business.pdb
