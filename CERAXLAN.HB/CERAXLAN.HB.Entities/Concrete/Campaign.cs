@@ -17,7 +17,7 @@ namespace CERAXLAN.HB.Entities.Concrete
         public uint Duration { get; set; }
         public double PriceManipulationLimit { get; set; }
         public uint TargetSalesCount { get; set; }
-        public string CampaignStartDate { get; set; } = DateTime.Now.ToLocalTime().ToString();
-
+        public uint TargetSales { get; set; }
+        
     }
 }

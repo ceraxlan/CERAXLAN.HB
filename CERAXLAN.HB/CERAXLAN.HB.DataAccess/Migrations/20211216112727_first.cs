@@ -2,7 +2,7 @@
 
 namespace CERAXLAN.HB.DataAccess.Migrations
 {
-    public partial class f1 : Migration
+    public partial class first : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

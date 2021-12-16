@@ -15,10 +15,11 @@ namespace CERAXLAN.HB.Business.Concrete
     public class ProductManager : IProductService
     {
         private IProductDal _productDal;
-
-        public ProductManager(IProductDal productDal)
+        private ICampaignService _campaignService;
+        public ProductManager(IProductDal productDal, ICampaignService campaignService)
         {
             _productDal = productDal;
+            _campaignService  = campaignService;
         }
 
         [FluentValidationAspect(typeof(ProductValidator))]
@@ -44,6 +45,7 @@ namespace CERAXLAN.HB.Business.Concrete
 
         public Product Update(Product product)
         {
+            _campaignService.GetCampaignWithProductCode(product.ProductCode);
             return _productDal.Update(product);
         }
         

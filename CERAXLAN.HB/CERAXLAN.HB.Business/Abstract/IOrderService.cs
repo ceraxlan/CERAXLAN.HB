@@ -1,4 +1,5 @@
-﻿using CERAXLAN.HB.Entities.Concrete;
+﻿using CERAXLAN.HB.Core.Common.Response;
+using CERAXLAN.HB.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace CERAXLAN.HB.Business.Abstract
     {
         List<Order> GetAll();
         Order Get(int id);
-        Order Create(Order order);
+        ResultMessage Create(Order order);
         Order Update(Order order);
         void Delete(Order order);
     }
