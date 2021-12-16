@@ -12,13 +12,12 @@ namespace CERAXLAN.HB.Business.Abstract
     {
         List<Campaign> GetAll();
         Campaign Get(string name);
-        ResultMessage Create(Campaign campaign);
+        Campaign Create(Campaign campaign);
         Campaign Update(Campaign campaign);
         void Delete(Campaign campaign);
         bool IsExistName(string name);
         bool IsActiveCampaign(string name);
-
         Campaign GetCampaignWithProductCode(string productCode);
-        void ControlCampaigns();
+       
     }
 }

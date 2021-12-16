@@ -15,18 +15,17 @@ namespace CERAXLAN.HB.Business.Concrete
     public class CampaignManager : ICampaignService
     {
         private ICampaignDal _campaignDal;
-        private IProductService _productService;
-
-        public CampaignManager(ICampaignDal campaignDal, IProductService productService)
+        //private readonly IProductService productService;
+       
+        public CampaignManager(ICampaignDal campaignDal)
         {
-            _campaignDal = campaignDal;
-            _productService = productService;
+            _campaignDal = campaignDal;         
         }
 
-        [FluentValidationAspect(typeof(CampaignValidator))]
-        public ResultMessage Create(Campaign campaign)
+       // [FluentValidationAspect(typeof(CampaignValidator))]
+        public Campaign Create(Campaign campaign)
         {
-            return new ResultMessage { Message = "Campaign created ", Result = _campaignDal.Add(campaign) };
+            return _campaignDal.Add(campaign);
         }
 
         public void Delete(Campaign campaign)
@@ -55,25 +54,13 @@ namespace CERAXLAN.HB.Business.Concrete
 
         public bool IsActiveCampaign(string name)
         {
-            var campaing = Get(name);
-            
-            return (campaing.Duration > AppTime.time) && (campaing.TargetSales < campaing.TargetSalesCount) ? true : false;
+            var campaing = Get(name);           
+            return (campaing.Duration > Application.time) && (campaing.TotalSales < campaing.TargetSalesCount) ? true : false;
             
         }
-
         public Campaign GetCampaignWithProductCode(string productCode)
         {
             return _campaignDal.Get(c => c.ProductCode == productCode);
-        }
-
-        public void ControlCampaigns()
-        {
-            var campaignList = GetAll();
-            foreach (var campaign in campaignList)
-            {
-                var result = IsActiveCampaign(campaign.Name);
-                if (result) { _productService.Get(campaign.ProductCode); } // devamke
-            }
-        }
+        }        
     }
 }

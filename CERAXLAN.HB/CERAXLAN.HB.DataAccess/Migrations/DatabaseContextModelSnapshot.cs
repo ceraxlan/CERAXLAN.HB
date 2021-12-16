@@ -26,13 +26,25 @@ namespace CERAXLAN.HB.DataAccess.Migrations
                     b.Property<long>("Duration")
                         .HasColumnType("bigint");
 
-                    b.Property<double>("PriceManipulationLimit")
-                        .HasColumnType("float");
+                    b.Property<int>("PriceManipulationLimit")
+                        .HasColumnType("int");
 
                     b.Property<string>("ProductCode")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<long>("TargetSalesCount")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("TotalPayment")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("TotalSales")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("Turnover")
                         .HasColumnType("bigint");
 
                     b.HasKey("Name");
@@ -63,8 +75,14 @@ namespace CERAXLAN.HB.DataAccess.Migrations
                     b.Property<string>("ProductCode")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<long>("FirstPrice")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("Price")
+                        .HasColumnType("bigint");
+
+                    b.Property<bool>("ProductDiscount")
+                        .HasColumnType("bit");
 
                     b.Property<long>("Stock")
                         .HasColumnType("bigint");

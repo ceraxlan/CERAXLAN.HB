@@ -12,43 +12,39 @@ namespace CERAXLAN.HB.WebApi.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class CampaignsController : ControllerBase
-    {
-        private readonly ICampaignService _campaignService;
-
-        public CampaignsController(ICampaignService campaignService)
-        {
-            _campaignService = campaignService;
+    {       
+        private readonly IApplicationService _applicationService;
+        public CampaignsController(IApplicationService applicationService)
+        {            
+            _applicationService = applicationService;
         }
 
-        [HttpGet("{name}", Name = "GetCampaign")]
-        public IActionResult GetCampaign(string name)
+        [HttpGet("GetCampaignInfo/{name}")]
+        public IActionResult GetCampaignInfo(string name)
         {
-            return Ok(_campaignService.Get(name));
+            return Ok(_applicationService.GetCampaignInfo(name));
         }
 
-        [HttpGet]
-        public IActionResult GetCampaigns()
+        [HttpGet("IncreaseTime/{value}")]
+        public IActionResult IncreaseTime(uint value)
         {
-            return Ok(_campaignService.GetAll());
+            return Ok(_applicationService.IncreaseTime(value));
         }
 
-        [HttpPost]
-        public IActionResult CreateCampaign(Campaign campaign)
+        [HttpPost("CreateCampaign/{name},{productCode},{duration},{priceManipulationLimit},{targetSalesCount}")]
+        public IActionResult CreateCampaign(string name,string productCode,uint duration,int priceManipulationLimit,uint targetSalesCount)
         {
-            return Ok(_campaignService.Create(campaign));
+            return Ok(_applicationService.CreateCampaign(new Campaign 
+            {
+                Name=name,
+                ProductCode =productCode,
+                Duration=duration,
+                PriceManipulationLimit=priceManipulationLimit,
+                TargetSalesCount=targetSalesCount
+            }));
         }
 
-        //[HttpDelete]
-        //public IActionResult DeleteCampaign(Campaign campaign)
-        //{
-        //    _campaignService.Delete(campaign);
-        //    return NoContent();
-        //}
+      
 
-        //[HttpPut]
-        //public IActionResult UpdateCampaign(Campaign campaign)
-        //{
-        //    return Ok(_campaignService.Update(campaign));
-        //}
     }
 }

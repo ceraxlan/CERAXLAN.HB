@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CERAXLAN.HB.Entities.Concrete
 {
-    public static class AppTime
+    public static class Application
     {
         public static uint time { get; set; } 
     }

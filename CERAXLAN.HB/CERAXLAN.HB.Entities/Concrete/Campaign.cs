@@ -15,9 +15,12 @@ namespace CERAXLAN.HB.Entities.Concrete
         public string Name { get; set; }
         public string ProductCode { get; set; }
         public uint Duration { get; set; }
-        public double PriceManipulationLimit { get; set; }
+        public int PriceManipulationLimit { get; set; }
         public uint TargetSalesCount { get; set; }
-        public uint TargetSales { get; set; }
-        
+        public uint TotalSales { get; set; }
+        public uint TotalPayment { get; set; }
+        public string Status { get; set; } = "Active";
+        public uint Turnover { get; set; } = 0;
+
     }
 }

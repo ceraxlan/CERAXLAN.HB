@@ -33,13 +33,14 @@ namespace CERAXLAN.HB.WebApi
 
             services.AddControllers();
 
-            services.AddScoped<IProductService, ProductManager>();
-            services.AddScoped<IProductDal, EfProductDal>();
-            services.AddScoped<IOrderService, OrderManager>();
-            services.AddScoped<IOrderDal, EfOrderDal>();
-            services.AddScoped<ICampaignService, CampaignManager>();
-            services.AddScoped<ICampaignDal, EfCampaignDal>();
-           
+            services.AddSingleton<IProductService, ProductManager>();
+            services.AddSingleton<IProductDal, EfProductDal>();
+            services.AddSingleton<IOrderService, OrderManager>();
+            services.AddSingleton<IOrderDal, EfOrderDal>();
+            services.AddSingleton<ICampaignService, CampaignManager>();
+            services.AddSingleton<ICampaignDal, EfCampaignDal>();
+            services.AddSingleton<IApplicationService, ApplicationManager>();
+
 
             services.AddSwaggerGen(c =>
             {

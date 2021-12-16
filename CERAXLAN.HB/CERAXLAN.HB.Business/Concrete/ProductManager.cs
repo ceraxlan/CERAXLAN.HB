@@ -14,18 +14,20 @@ namespace CERAXLAN.HB.Business.Concrete
 {
     public class ProductManager : IProductService
     {
-        private IProductDal _productDal;
-        private ICampaignService _campaignService;
-        public ProductManager(IProductDal productDal, ICampaignService campaignService)
+        private readonly IProductDal _productDal;
+        public ProductManager(IProductDal productDal)
         {
-            _productDal = productDal;
-            _campaignService  = campaignService;
+            _productDal = productDal;          
         }
 
-        [FluentValidationAspect(typeof(ProductValidator))]
-        public ResultMessage Create(Product product)
+        public ProductManager()
+        {
+        }
+
+        //[FluentValidationAspect(typeof(ProductValidator))]
+        public Product Create(Product product)
         {          
-            return new ResultMessage {Message="Product created " ,Result= _productDal.Add(product) };
+            return  _productDal.Add(product);
         }
   
         public void Delete(Product product)
@@ -45,7 +47,7 @@ namespace CERAXLAN.HB.Business.Concrete
 
         public Product Update(Product product)
         {
-            _campaignService.GetCampaignWithProductCode(product.ProductCode);
+            //_campaignService.GetCampaignWithProductCode(product.ProductCode);
             return _productDal.Update(product);
         }
         

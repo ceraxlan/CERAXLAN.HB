@@ -22,6 +22,7 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\D
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\PostSharp.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -55,6 +56,7 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\D
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.AssemblyInfoInputs.cache
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.AssemblyInfo.cs
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\staticwebassets\CERAXLAN.HB.WebApi.StaticWebAssets.Manifest.cache
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\staticwebassets\CERAXLAN.HB.WebApi.StaticWebAssets.xml
@@ -65,5 +67,3 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\D
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\ref\CERAXLAN.HB.WebApi.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.pdb
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.genruntimeconfig.cache
-C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\PostSharp.dll

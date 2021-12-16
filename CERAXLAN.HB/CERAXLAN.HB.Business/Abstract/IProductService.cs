@@ -12,7 +12,7 @@ namespace CERAXLAN.HB.Business.Abstract
     {
         List<Product> GetAll();
         Product Get(string productCode);
-        ResultMessage Create(Product product);
+        Product Create(Product product);
         Product Update(Product product);
         void Delete(Product product);
         bool IsExistName(string name);

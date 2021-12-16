@@ -12,44 +12,23 @@ namespace CERAXLAN.HB.WebApi.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
-    {
-        private readonly IProductService _productService;
-
-        public ProductsController(IProductService productService)
+    {      
+        private readonly IApplicationService _applicationService;
+        public ProductsController(IApplicationService applicationService)
         {
-            _productService = productService;
+            _applicationService = applicationService;
+        }
+   
+        [HttpGet("GetProductInfo/{productCode}")]
+        public IActionResult GetProductInfo(string productCode)
+        {
+            return Ok(_applicationService.GetProductInfo(productCode));
         }
 
-        [HttpGet("{productCode}", Name = "GetProduct")]
-        public IActionResult GetProduct(string productCode)
-        {
-            return Ok(_productService.Get(productCode));
-        }
-
-        [HttpGet]
-        public IActionResult GetProducts()
-        {
-            return Ok(_productService.GetAll());
-        }
-
-        [HttpPost]
-        public IActionResult CreateProduct(Product product)
+        [HttpPost("CreateProduct/{productCode},{price},{stock}")]
+        public IActionResult CreateProduct(string productCode,uint price,uint stock)
         {         
-            return Ok(_productService.Create(product));
-        }
-
-        //[HttpDelete]
-        //public IActionResult DeleteProduct(Product product)
-        //{
-        //    _productService.Delete(product);
-        //    return NoContent();
-        //}
-
-        //[HttpPut]
-        //public IActionResult UpdateProduct(Product product)
-        //{
-        //    return Ok(_productService.Update(product));
-        //}
-
+            return Ok(_applicationService.CreateProduct(new Product {ProductCode=productCode,Price=price,Stock=stock,FirstPrice=price }));
+        }      
     }
 }

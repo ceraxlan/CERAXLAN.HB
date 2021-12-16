@@ -12,43 +12,17 @@ namespace CERAXLAN.HB.WebApi.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class OrdersController : ControllerBase
-    {
-        private readonly IOrderService _orderService;
-
-        public OrdersController(IOrderService orderService)
+    {       
+        private readonly IApplicationService _applicationService;
+        public OrdersController(IApplicationService applicationService)
         {
-            _orderService = orderService;
+            _applicationService = applicationService;
         }
-
-        //[HttpGet("{id}", Name = "GetOrder")]
-        //public IActionResult GetOrder(int id)
-        //{
-        //    return Ok(_orderService.Get(id));
-        //}
-
-        //[HttpGet]
-        //public IActionResult GetOrders()
-        //{
-        //    return Ok(_orderService.GetAll());
-        //}
-
-        [HttpPost]
-        public IActionResult CreateOrder(Order order)
+      
+        [HttpPost("CreateOrder/{productCode},{quantity}")]
+        public IActionResult CreateOrder(string productCode,uint quantity)
         {
-            return Ok(_orderService.Create(order));
-        }
-
-        //[HttpDelete]
-        //public IActionResult DeleteOrder(Order order)
-        //{
-        //    _orderService.Delete(order);
-        //    return NoContent();
-        //}
-
-        //[HttpPut]
-        //public IActionResult UpdateOrder(Order order)
-        //{
-        //    return Ok(_orderService.Update(order));
-        //}
+            return Ok(_applicationService.CreateOrder(new Order { ProductCode=productCode,Quantity=quantity }));
+        }      
     }
 }

@@ -12,7 +12,7 @@ namespace CERAXLAN.HB.Business.Abstract
     {
         List<Order> GetAll();
         Order Get(int id);
-        ResultMessage Create(Order order);
+        Order Create(Order order);
         Order Update(Order order);
         void Delete(Order order);
     }
