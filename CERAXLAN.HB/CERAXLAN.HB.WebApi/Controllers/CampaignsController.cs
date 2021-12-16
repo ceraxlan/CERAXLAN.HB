@@ -38,17 +38,17 @@ namespace CERAXLAN.HB.WebApi.Controllers
             return Ok(_campaignService.Create(campaign));
         }
 
-        [HttpDelete]
-        public IActionResult DeleteCampaign(Campaign campaign)
-        {
-            _campaignService.Delete(campaign);
-            return NoContent();
-        }
+        //[HttpDelete]
+        //public IActionResult DeleteCampaign(Campaign campaign)
+        //{
+        //    _campaignService.Delete(campaign);
+        //    return NoContent();
+        //}
 
-        [HttpPut]
-        public IActionResult UpdateCampaign(Campaign campaign)
-        {
-            return Ok(_campaignService.Update(campaign));
-        }
+        //[HttpPut]
+        //public IActionResult UpdateCampaign(Campaign campaign)
+        //{
+        //    return Ok(_campaignService.Update(campaign));
+        //}
     }
 }

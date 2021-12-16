@@ -39,6 +39,7 @@ namespace CERAXLAN.HB.WebApi
             services.AddScoped<IOrderDal, EfOrderDal>();
             services.AddScoped<ICampaignService, CampaignManager>();
             services.AddScoped<ICampaignDal, EfCampaignDal>();
+           
 
             services.AddSwaggerGen(c =>
             {

@@ -1,4 +1,7 @@
 ﻿using CERAXLAN.HB.Business.Abstract;
+using CERAXLAN.HB.Business.ValidationRules.FluentValidation;
+using CERAXLAN.HB.Core.Aspects.Postsharp.ValidationAspects;
+using CERAXLAN.HB.Core.Common.Response;
 using CERAXLAN.HB.DataAccess.Abstract;
 using CERAXLAN.HB.Entities.Concrete;
 using System;
@@ -18,14 +21,15 @@ namespace CERAXLAN.HB.Business.Concrete
             _productDal = productDal;
         }
 
-        public Product Create(Product product)
-        {                 
-            return _productDal.Add(product);
+        [FluentValidationAspect(typeof(ProductValidator))]
+        public ResultMessage Create(Product product)
+        {          
+            return new ResultMessage {Message="Product created " ,Result= _productDal.Add(product) };
         }
   
-        public void Delete(Product Product)
+        public void Delete(Product product)
         {
-            _productDal.Delete(Product);
+            _productDal.Delete(product);
         }
 
         public List<Product> GetAll()
@@ -41,6 +45,12 @@ namespace CERAXLAN.HB.Business.Concrete
         public Product Update(Product product)
         {
             return _productDal.Update(product);
+        }
+        
+        public bool IsExistName(string name)
+        {
+
+            return _productDal.Get(p => p.ProductCode == name)==null ? true:false;
         }
     }
 }

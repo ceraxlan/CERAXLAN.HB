@@ -1,4 +1,6 @@
-﻿using CERAXLAN.HB.Entities.Concrete;
+﻿using CERAXLAN.HB.Business.Abstract;
+using CERAXLAN.HB.DataAccess.Concrete.EntityFramework;
+using CERAXLAN.HB.Entities.Concrete;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
@@ -10,10 +12,17 @@ namespace CERAXLAN.HB.Business.ValidationRules.FluentValidation
 {
     class ProductValidator : AbstractValidator<Product>
     {
-        public ProductValidator()
-        {           
-            //RuleFor(p => p.ProductCode).NotEmpty();
-            //RuleFor(p => p.Price).GreaterThan(0);
+        private IProductService _productService;
+        public ProductValidator(IProductService productService)
+        {
+            _productService = productService;
+
+            RuleFor(x => x.ProductCode).NotEmpty().WithMessage("Product code is required.");
+            RuleFor(x => x.ProductCode).NotEqual("").WithMessage("Product code is required.");
+            RuleFor(x => x.ProductCode).Must(_productService.IsExistName).WithMessage("This Product code already exists.");
+
         }
+
+        
     }
 }

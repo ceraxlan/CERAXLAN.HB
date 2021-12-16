@@ -20,17 +20,17 @@ namespace CERAXLAN.HB.WebApi.Controllers
             _orderService = orderService;
         }
 
-        [HttpGet("{id}", Name = "GetOrder")]
-        public IActionResult GetOrder(int id)
-        {
-            return Ok(_orderService.Get(id));
-        }
+        //[HttpGet("{id}", Name = "GetOrder")]
+        //public IActionResult GetOrder(int id)
+        //{
+        //    return Ok(_orderService.Get(id));
+        //}
 
-        [HttpGet]
-        public IActionResult GetOrders()
-        {
-            return Ok(_orderService.GetAll());
-        }
+        //[HttpGet]
+        //public IActionResult GetOrders()
+        //{
+        //    return Ok(_orderService.GetAll());
+        //}
 
         [HttpPost]
         public IActionResult CreateOrder(Order order)
@@ -38,17 +38,17 @@ namespace CERAXLAN.HB.WebApi.Controllers
             return Ok(_orderService.Create(order));
         }
 
-        [HttpDelete]
-        public IActionResult DeleteOrder(Order order)
-        {
-            _orderService.Delete(order);
-            return NoContent();
-        }
+        //[HttpDelete]
+        //public IActionResult DeleteOrder(Order order)
+        //{
+        //    _orderService.Delete(order);
+        //    return NoContent();
+        //}
 
-        [HttpPut]
-        public IActionResult UpdateOrder(Order order)
-        {
-            return Ok(_orderService.Update(order));
-        }
+        //[HttpPut]
+        //public IActionResult UpdateOrder(Order order)
+        //{
+        //    return Ok(_orderService.Update(order));
+        //}
     }
 }

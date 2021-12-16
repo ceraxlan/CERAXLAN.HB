@@ -38,18 +38,18 @@ namespace CERAXLAN.HB.WebApi.Controllers
             return Ok(_productService.Create(product));
         }
 
-        [HttpDelete]
-        public IActionResult DeleteProduct(Product product)
-        {
-            _productService.Delete(product);
-            return NoContent();
-        }
+        //[HttpDelete]
+        //public IActionResult DeleteProduct(Product product)
+        //{
+        //    _productService.Delete(product);
+        //    return NoContent();
+        //}
 
-        [HttpPut]
-        public IActionResult UpdateProduct(Product product)
-        {
-            return Ok(_productService.Update(product));
-        }
+        //[HttpPut]
+        //public IActionResult UpdateProduct(Product product)
+        //{
+        //    return Ok(_productService.Update(product));
+        //}
 
     }
 }

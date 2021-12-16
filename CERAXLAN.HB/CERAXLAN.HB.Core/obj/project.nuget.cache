@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BrGuXrGmqwC/0xkMp5RC+uXtOL/X7P7EKoP8qWF/ydbmRS6qHjX8n6uW5rSTsvKUyEFX3j/4Mn190DOCm+/22g==",
+  "dgSpecHash": "riCo12TbtuMHNKTxLFIZLAVsBg5Br4SRTetgAOcDhnk1ZM+4ky6ChXtpVizpGClBD9Ovt+EwE3LOHzXsvph5Xw==",
   "success": true,
   "projectFilePath": "C:\\Users\\er_as\\Documents\\GitHub\\CERAXLAN.HB\\CERAXLAN.HB\\CERAXLAN.HB.Core\\CERAXLAN.HB.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\er_as\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.12\\microsoft.entityframeworkcore.5.0.12.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.12\\microsoft.entityframeworkcore.abstractions.5.0.12.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.12\\microsoft.entityframeworkcore.analyzers.5.0.12.nupkg.sha512",
@@ -15,6 +16,7 @@
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\er_as\\.nuget\\packages\\postsharp.redist\\6.10.5\\postsharp.redist.6.10.5.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"

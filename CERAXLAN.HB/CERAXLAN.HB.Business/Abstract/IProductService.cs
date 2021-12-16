@@ -1,4 +1,5 @@
-﻿using CERAXLAN.HB.Entities.Concrete;
+﻿using CERAXLAN.HB.Core.Common.Response;
+using CERAXLAN.HB.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,9 @@ namespace CERAXLAN.HB.Business.Abstract
     {
         List<Product> GetAll();
         Product Get(string productCode);
-        Product Create(Product product);
-        Product Update(Product Product);
-        void Delete(Product Product);
+        ResultMessage Create(Product product);
+        Product Update(Product product);
+        void Delete(Product product);
+        bool IsExistName(string name);
     }
 }

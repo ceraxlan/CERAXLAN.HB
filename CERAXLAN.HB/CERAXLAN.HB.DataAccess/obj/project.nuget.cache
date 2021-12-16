@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "I/8hbMMl+m2+e/PWe7DuZq1/iTG8qkpe/phaEK/geIH3M2jcYuUO4GRZuOgAeqceNxMPMraQkWq0smXuF3yCcw==",
+  "dgSpecHash": "ze4Hyc9vm25NVocEET3zW38ayfiVH8b3hK/uBN8UmwP6ZFGYA6JADYfeQNlqyWdyogOmMso8GgtcUS/8Mey56w==",
   "success": true,
   "projectFilePath": "C:\\Users\\er_as\\Documents\\GitHub\\CERAXLAN.HB\\CERAXLAN.HB\\CERAXLAN.HB.DataAccess\\CERAXLAN.HB.DataAccess.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\er_as\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -35,6 +36,7 @@
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\er_as\\.nuget\\packages\\postsharp.redist\\6.10.5\\postsharp.redist.6.10.5.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

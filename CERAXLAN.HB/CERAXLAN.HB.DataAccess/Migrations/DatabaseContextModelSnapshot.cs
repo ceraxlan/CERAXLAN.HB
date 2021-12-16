@@ -23,6 +23,9 @@ namespace CERAXLAN.HB.DataAccess.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("CampaignStartDate")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<long>("Duration")
                         .HasColumnType("bigint");
 

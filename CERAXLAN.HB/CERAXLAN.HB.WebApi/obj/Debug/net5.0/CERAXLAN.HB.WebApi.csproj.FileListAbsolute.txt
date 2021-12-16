@@ -66,3 +66,4 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\D
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.pdb
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.genruntimeconfig.cache
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\PostSharp.dll

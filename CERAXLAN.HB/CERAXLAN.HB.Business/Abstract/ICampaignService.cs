@@ -14,5 +14,6 @@ namespace CERAXLAN.HB.Business.Abstract
         Campaign Create(Campaign campaign);
         Campaign Update(Campaign campaign);
         void Delete(Campaign campaign);
+        bool IsExistName(string name);
     }
 }
