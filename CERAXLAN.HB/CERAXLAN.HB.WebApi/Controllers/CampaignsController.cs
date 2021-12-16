@@ -19,19 +19,19 @@ namespace CERAXLAN.HB.WebApi.Controllers
             _applicationService = applicationService;
         }
 
-        [HttpGet("GetCampaignInfo/{name}")]
+        [HttpGet("GetCampaignInfo")]
         public IActionResult GetCampaignInfo(string name)
         {
             return Ok(_applicationService.GetCampaignInfo(name));
         }
 
-        [HttpGet("IncreaseTime/{value}")]
+        [HttpGet("IncreaseTime")]
         public IActionResult IncreaseTime(uint value)
         {
             return Ok(_applicationService.IncreaseTime(value));
         }
 
-        [HttpPost("CreateCampaign/{name},{productCode},{duration},{priceManipulationLimit},{targetSalesCount}")]
+        [HttpPost("CreateCampaign")]
         public IActionResult CreateCampaign(string name,string productCode,uint duration,int priceManipulationLimit,uint targetSalesCount)
         {
             return Ok(_applicationService.CreateCampaign(new Campaign 

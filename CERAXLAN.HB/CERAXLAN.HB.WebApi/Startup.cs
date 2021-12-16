@@ -1,11 +1,15 @@
 using CERAXLAN.HB.Business.Abstract;
 using CERAXLAN.HB.Business.Concrete;
+using CERAXLAN.HB.Business.ValidationRules.FluentValidation;
 using CERAXLAN.HB.DataAccess.Abstract;
 using CERAXLAN.HB.DataAccess.Concrete.EntityFramework;
+using CERAXLAN.HB.Entities.Concrete;
+using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -40,7 +44,7 @@ namespace CERAXLAN.HB.WebApi
             services.AddSingleton<ICampaignService, CampaignManager>();
             services.AddSingleton<ICampaignDal, EfCampaignDal>();
             services.AddSingleton<IApplicationService, ApplicationManager>();
-
+           
 
             services.AddSwaggerGen(c =>
             {

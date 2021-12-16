@@ -19,13 +19,13 @@ namespace CERAXLAN.HB.WebApi.Controllers
             _applicationService = applicationService;
         }
    
-        [HttpGet("GetProductInfo/{productCode}")]
+        [HttpGet("GetProductInfo")]
         public IActionResult GetProductInfo(string productCode)
         {
             return Ok(_applicationService.GetProductInfo(productCode));
         }
 
-        [HttpPost("CreateProduct/{productCode},{price},{stock}")]
+        [HttpPost("CreateProduct")]
         public IActionResult CreateProduct(string productCode,uint price,uint stock)
         {         
             return Ok(_applicationService.CreateProduct(new Product {ProductCode=productCode,Price=price,Stock=stock,FirstPrice=price }));

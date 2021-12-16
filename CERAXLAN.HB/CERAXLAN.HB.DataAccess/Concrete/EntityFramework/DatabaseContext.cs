@@ -10,6 +10,7 @@ namespace CERAXLAN.HB.DataAccess.Concrete.EntityFramework
 {
     public class DatabaseContext :DbContext
     {
+        
         public DbSet<Order> Orders { get; set; }     
         public DbSet<Campaign> Campaigns { get; set; }
         public DbSet<Product> Products { get; set; }

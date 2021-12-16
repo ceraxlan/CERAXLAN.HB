@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CERAXLAN.HB.Business.ValidationRules.FluentValidation
 {
-    class ProductValidator : AbstractValidator<Product>
+    public class ProductValidator : AbstractValidator<Product>
     {
         private IProductService _productService;
         public ProductValidator(IProductService productService)

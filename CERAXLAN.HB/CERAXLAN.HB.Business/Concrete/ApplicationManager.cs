@@ -1,4 +1,6 @@
 ﻿using CERAXLAN.HB.Business.Abstract;
+using CERAXLAN.HB.Business.ValidationRules.FluentValidation;
+using CERAXLAN.HB.Core.Aspects.Postsharp.ValidationAspects;
 using CERAXLAN.HB.Core.Common.Response;
 using CERAXLAN.HB.Entities.Concrete;
 using CERAXLAN.HB.Entities.Concrete.ViewModels;
@@ -65,7 +67,8 @@ namespace CERAXLAN.HB.Business.Concrete
                 }
             }
         }
-     
+
+        [FluentValidationAspect(typeof(ProductValidator))]
         public ResultMessage CreateProduct(Product product)
         {
             var _product = _productService.Get(product.ProductCode);
@@ -100,7 +103,14 @@ namespace CERAXLAN.HB.Business.Concrete
             {
                 if (product.Price != product.FirstPrice)//there is a discount
                 {
+                    
                     var campaign = _campaignService.GetCampaignWithProductCode(product.ProductCode);
+                    var limit = campaign.TargetSalesCount - campaign.TotalSales;
+                    if (order.Quantity > limit)
+                    {
+                        return new ResultMessage { Message = "Please order "+limit+" items to take advantage of the discount! " };
+                    }
+
                     campaign.TotalSales += order.Quantity;
                     campaign.TotalPayment += order.Quantity * product.Price; 
                     _campaignService.Update(campaign);
