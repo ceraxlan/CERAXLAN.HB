@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jhjen5XLIljp2nEhenESK7+fpHBx5HLys2KXKHLiIWwp6doZ5y4yaA3VG5YSFgH/AiMdLw9SZ3RJi3DcMEKf7g==",
+  "dgSpecHash": "RaYH3zPmeMi8huoDsoExAn14/rfGXsRjRqN5QpSWBCAX4idimuczggfxZSNhqE3VAxhpxCdicPTTjqB4mtYUUw==",
   "success": true,
   "projectFilePath": "C:\\Users\\er_as\\Documents\\GitHub\\CERAXLAN.HB\\CERAXLAN.HB\\CERAXLAN.HB.Entities\\CERAXLAN.HB.Entities.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\er_as\\.nuget\\packages\\postsharp\\6.10.5\\postsharp.6.10.5.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\postsharp.redist\\6.10.5\\postsharp.redist.6.10.5.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",

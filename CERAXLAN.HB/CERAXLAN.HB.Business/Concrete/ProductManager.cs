@@ -24,7 +24,7 @@ namespace CERAXLAN.HB.Business.Concrete
         {
         }
 
-        //[FluentValidationAspect(typeof(ProductValidator))]
+        [FluentValidationAspect(typeof(ProductValidator))]
         public Product Create(Product product)
         {          
             return  _productDal.Add(product);

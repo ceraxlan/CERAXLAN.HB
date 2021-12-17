@@ -457,6 +457,21 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "PostSharp/6.10.5": {
+        "type": "package",
+        "dependencies": {
+          "PostSharp.Redist": "[6.10.5, 7.0.0)"
+        },
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
       "PostSharp.Redist/6.10.5": {
         "type": "package",
         "compile": {
@@ -1580,7 +1595,8 @@
         "dependencies": {
           "CERAXLAN.HB.DataAccess": "1.0.0",
           "CERAXLAN.HB.Entities": "1.0.0",
-          "FluentValidation": "10.3.6"
+          "FluentValidation": "10.3.6",
+          "PostSharp": "6.10.5"
         },
         "compile": {
           "bin/placeholder/CERAXLAN.HB.Business.dll": {}
@@ -1595,7 +1611,7 @@
         "dependencies": {
           "FluentValidation": "10.3.6",
           "Microsoft.EntityFrameworkCore": "5.0.12",
-          "PostSharp.Redist": "6.10.5"
+          "PostSharp": "6.10.5"
         },
         "compile": {
           "bin/placeholder/CERAXLAN.HB.Core.dll": {}
@@ -2388,6 +2404,43 @@
         "newtonsoft.json.10.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "PostSharp/6.10.5": {
+      "sha512": "2RXSSEfU2mlQxSOCtbSgsRG7+Mq5fOOEYfbSVd3URk5jbaSdqCZKMWuwiY6Cfhg1Nyp9+3bD0WmX/3ep6lHFtA==",
+      "type": "package",
+      "path": "postsharp/6.10.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.html",
+        "build/PostSharp-Tools.7z",
+        "build/PostSharp.BeforeTargetFrameworkInference.targets",
+        "build/PostSharp.Version.properties",
+        "build/PostSharp.properties",
+        "build/PostSharp.props",
+        "build/PostSharp.targets",
+        "build/PostSharp.tasks",
+        "build/_common/unzipper/SharpCompress.dll",
+        "build/_common/unzipper/System.Runtime.CompilerServices.Unsafe.dll",
+        "build/_common/unzipper/System.Text.Encoding.CodePages.dll",
+        "build/_common/unzipper/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "build/_common/unzipper/unzipper.deps.json",
+        "build/_common/unzipper/unzipper.dll",
+        "build/_common/unzipper/unzipper.exe",
+        "build/_common/unzipper/unzipper.exe.config",
+        "build/_common/unzipper/unzipper.pdb",
+        "build/_common/unzipper/unzipper.runtimeconfig.json",
+        "build/net472/PostSharp.MSBuild.v6.10.5.Release.dll",
+        "build/net472/PostSharp.MSBuild.v6.10.5.Release.pdb",
+        "build/netcoreapp2.1/PostSharp.MSBuild.v6.10.5.Release.dll",
+        "build/netcoreapp2.1/PostSharp.MSBuild.v6.10.5.Release.pdb",
+        "icon.png",
+        "lib/net35-client/_._",
+        "lib/netstandard1.0/_._",
+        "postsharp.6.10.5.nupkg.sha512",
+        "postsharp.nuspec"
       ]
     },
     "PostSharp.Redist/6.10.5": {
@@ -6023,6 +6076,7 @@
     "net5.0": [
       "CERAXLAN.HB.Business >= 1.0.0",
       "CERAXLAN.HB.Entities >= 1.0.0",
+      "Microsoft.EntityFrameworkCore >= 5.0.12",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -6077,6 +6131,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.12, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.6.3, )"
@@ -6100,7 +6158,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

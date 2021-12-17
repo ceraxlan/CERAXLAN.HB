@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ze4Hyc9vm25NVocEET3zW38ayfiVH8b3hK/uBN8UmwP6ZFGYA6JADYfeQNlqyWdyogOmMso8GgtcUS/8Mey56w==",
+  "dgSpecHash": "M3Y/9KeyOE/3dC7qOu/TvoQhPWDXXG6+FWD5sJ9m677JZLzob9qhjLsuP0ACtmcII1klVkpaOdIC41QWiCzSjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\er_as\\Documents\\GitHub\\CERAXLAN.HB\\CERAXLAN.HB\\CERAXLAN.HB.DataAccess\\CERAXLAN.HB.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\er_as\\.nuget\\packages\\postsharp\\6.10.5\\postsharp.6.10.5.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\postsharp.redist\\6.10.5\\postsharp.redist.6.10.5.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

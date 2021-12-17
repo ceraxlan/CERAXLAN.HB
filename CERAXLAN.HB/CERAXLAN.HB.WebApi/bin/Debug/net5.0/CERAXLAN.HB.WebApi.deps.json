@@ -687,6 +687,11 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "PostSharp/6.10.5": {
+        "dependencies": {
+          "PostSharp.Redist": "6.10.5"
+        }
+      },
       "PostSharp.Redist/6.10.5": {
         "runtime": {
           "lib/net5.0/PostSharp.dll": {
@@ -1372,7 +1377,8 @@
         "dependencies": {
           "CERAXLAN.HB.DataAccess": "1.0.0",
           "CERAXLAN.HB.Entities": "1.0.0",
-          "FluentValidation": "10.3.6"
+          "FluentValidation": "10.3.6",
+          "PostSharp": "6.10.5"
         },
         "runtime": {
           "CERAXLAN.HB.Business.dll": {}
@@ -1385,7 +1391,7 @@
         "dependencies": {
           "FluentValidation": "10.3.6",
           "Microsoft.EntityFrameworkCore": "5.0.12",
-          "PostSharp.Redist": "6.10.5"
+          "PostSharp": "6.10.5"
         },
         "runtime": {
           "CERAXLAN.HB.Core.dll": {}
@@ -3329,6 +3335,13 @@
       "sha512": "sha512-ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
       "path": "newtonsoft.json/10.0.1",
       "hashPath": "newtonsoft.json.10.0.1.nupkg.sha512"
+    },
+    "PostSharp/6.10.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2RXSSEfU2mlQxSOCtbSgsRG7+Mq5fOOEYfbSVd3URk5jbaSdqCZKMWuwiY6Cfhg1Nyp9+3bD0WmX/3ep6lHFtA==",
+      "path": "postsharp/6.10.5",
+      "hashPath": "postsharp.6.10.5.nupkg.sha512"
     },
     "PostSharp.Redist/6.10.5": {
       "type": "package",

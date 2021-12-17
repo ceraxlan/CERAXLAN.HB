@@ -2,6 +2,7 @@
 using CERAXLAN.HB.Business.ValidationRules.FluentValidation;
 using CERAXLAN.HB.Core.Aspects.Postsharp.ValidationAspects;
 using CERAXLAN.HB.Core.Common.Response;
+using CERAXLAN.HB.Core.CrossCuttingConcerns.Validations.FluentValidation;
 using CERAXLAN.HB.Entities.Concrete;
 using CERAXLAN.HB.Entities.Concrete.ViewModels;
 using System;
@@ -71,6 +72,7 @@ namespace CERAXLAN.HB.Business.Concrete
         [FluentValidationAspect(typeof(ProductValidator))]
         public ResultMessage CreateProduct(Product product)
         {
+            
             var _product = _productService.Get(product.ProductCode);
             if (_product != null) return new ResultMessage { Message = "This product is available !" };
 
