@@ -67,3 +67,6 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\D
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\ref\CERAXLAN.HB.WebApi.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.pdb
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\obj\Debug\net5.0\CERAXLAN.HB.WebApi.genruntimeconfig.cache
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Ninject.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Autofac.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.WebApi\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll

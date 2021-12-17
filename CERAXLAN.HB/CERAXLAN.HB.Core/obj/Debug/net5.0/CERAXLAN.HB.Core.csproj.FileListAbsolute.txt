@@ -12,3 +12,4 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Core\bin\Deb
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Core\obj\Debug\net5.0\PostSharp\touch
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Core\obj\Debug\net5.0\PostSharp\AdditionalBuildDependencies.txt
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Core\obj\Debug\net5.0\PostSharp\postsharp.app.config
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Core\obj\Debug\net5.0\CERAXLAN.HB.Core.csproj.AssemblyReference.cache

@@ -33,8 +33,11 @@
     ".NETCoreApp,Version=v5.0": {
       "CERAXLAN.HB.WebApi/1.0.0": {
         "dependencies": {
+          "Autofac": "6.3.0",
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "CERAXLAN.HB.Business": "1.0.0",
           "CERAXLAN.HB.Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.12",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -323,6 +326,35 @@
         },
         "compile": {
           "CERAXLAN.HB.WebApi.dll": {}
+        }
+      },
+      "Autofac/6.3.0": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "5.0.1"
+        },
+        "runtime": {
+          "lib/net5.0/Autofac.dll": {
+            "assemblyVersion": "6.3.0.0",
+            "fileVersion": "6.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Autofac.dll": {}
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/7.2.0": {
+        "dependencies": {
+          "Autofac": "6.3.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "7.2.0.0",
+            "fileVersion": "7.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Autofac.Extensions.DependencyInjection.dll": {}
         }
       },
       "FluentValidation/10.3.6": {
@@ -685,6 +717,21 @@
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Ninject/3.3.4": {
+        "dependencies": {
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ninject.dll": {
+            "assemblyVersion": "3.3.4.0",
+            "fileVersion": "3.3.4.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Ninject.dll": {}
         }
       },
       "PostSharp/6.10.5": {
@@ -1375,9 +1422,12 @@
       },
       "CERAXLAN.HB.Business/1.0.0": {
         "dependencies": {
+          "Autofac": "6.3.0",
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "CERAXLAN.HB.DataAccess": "1.0.0",
           "CERAXLAN.HB.Entities": "1.0.0",
           "FluentValidation": "10.3.6",
+          "Ninject": "3.3.4",
           "PostSharp": "6.10.5"
         },
         "runtime": {
@@ -3119,6 +3169,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Autofac/6.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gO4bli0N8tDnBHzbYktcnbXlmN6T+IT5W+FUGgCUaM6pwwHXIxOPoUGvfGum7sZpJJgfQNgjFFv80ZPuARgRdA==",
+      "path": "autofac/6.3.0",
+      "hashPath": "autofac.6.3.0.nupkg.sha512"
+    },
+    "Autofac.Extensions.DependencyInjection/7.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S2Jor8pTV+8QSs96ENq/FhGdnrWsntGs93z0OXYlIivUWGPNXQHNCjFPfSBeBlHClvJFEXMvlkY32bAKy2YkPg==",
+      "path": "autofac.extensions.dependencyinjection/7.2.0",
+      "hashPath": "autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512"
+    },
     "FluentValidation/10.3.6": {
       "type": "package",
       "serviceable": true,
@@ -3335,6 +3399,13 @@
       "sha512": "sha512-ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
       "path": "newtonsoft.json/10.0.1",
       "hashPath": "newtonsoft.json.10.0.1.nupkg.sha512"
+    },
+    "Ninject/3.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CmbWW97FfJuh4LEOVZM/spqXl4KAulRUjqeMwRd5J9rDMQArmIYaDMU3pyzXXHT062tbF0OPIMwI7tSOtprPfg==",
+      "path": "ninject/3.3.4",
+      "hashPath": "ninject.3.3.4.nupkg.sha512"
     },
     "PostSharp/6.10.5": {
       "type": "package",

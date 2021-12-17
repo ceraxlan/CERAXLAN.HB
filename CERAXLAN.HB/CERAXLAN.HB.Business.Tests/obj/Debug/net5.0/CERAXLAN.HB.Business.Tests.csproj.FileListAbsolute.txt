@@ -158,3 +158,6 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tes
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\obj\Debug\net5.0\PostSharp\touch
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\obj\Debug\net5.0\PostSharp\AdditionalBuildDependencies.txt
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\obj\Debug\net5.0\PostSharp\postsharp.app.config
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\bin\Debug\net5.0\Autofac.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.Business.Tests\bin\Debug\net5.0\Ninject.dll

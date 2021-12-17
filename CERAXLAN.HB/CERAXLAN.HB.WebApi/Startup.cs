@@ -1,5 +1,7 @@
+using Autofac;
 using CERAXLAN.HB.Business.Abstract;
 using CERAXLAN.HB.Business.Concrete;
+using CERAXLAN.HB.Business.DependencyResolvers.AutoFac;
 using CERAXLAN.HB.Business.ValidationRules.FluentValidation;
 using CERAXLAN.HB.DataAccess.Abstract;
 using CERAXLAN.HB.DataAccess.Concrete.EntityFramework;
@@ -32,20 +34,17 @@ namespace CERAXLAN.HB.WebApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureContainer(ContainerBuilder builder)
+        {       
+            builder.RegisterModule(new BusinessModule());
+            builder.RegisterModule(new ValidationModule());
+            
+        }
         public void ConfigureServices(IServiceCollection services)
         {
 
             services.AddControllers();
-
-            services.AddSingleton<IProductService, ProductManager>();
-            services.AddSingleton<IProductDal, EfProductDal>();
-            services.AddSingleton<IOrderService, OrderManager>();
-            services.AddSingleton<IOrderDal, EfOrderDal>();
-            services.AddSingleton<ICampaignService, CampaignManager>();
-            services.AddSingleton<ICampaignDal, EfCampaignDal>();
-            services.AddSingleton<IApplicationService, ApplicationManager>();
-           
-
+                   
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CERAXLAN.HB.WebApi", Version = "v1" });

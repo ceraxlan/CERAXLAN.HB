@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Rsjj+gb+Xw4E0++89InPM8zOAGqA3/q8E/KH4jhCKzQooA8WYEsln3I0XTMNZp02OwCKCopUWtooH+VHtGtFSw==",
+  "dgSpecHash": "PR5/uKb08ibeyC0JMRC9XQi6x32R03gp9UhRCJ51WS5o+WC4HlVudsUjqqNwx6lM6p8hsca8HSngpGm+BKY/Iw==",
   "success": true,
   "projectFilePath": "C:\\Users\\er_as\\Documents\\GitHub\\CERAXLAN.HB\\CERAXLAN.HB\\CERAXLAN.HB.Business\\CERAXLAN.HB.Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\er_as\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
+    "C:\\Users\\er_as\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -33,6 +35,7 @@
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\er_as\\.nuget\\packages\\ninject\\3.3.4\\ninject.3.3.4.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\postsharp\\6.10.5\\postsharp.6.10.5.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\postsharp.redist\\6.10.5\\postsharp.redist.6.10.5.nupkg.sha512",
     "C:\\Users\\er_as\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
