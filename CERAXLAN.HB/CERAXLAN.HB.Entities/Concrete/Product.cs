@@ -13,9 +13,9 @@ namespace CERAXLAN.HB.Entities.Concrete
     {
         [Key]
         public string ProductCode { get; set; }
-        public uint Price { get; set; }
-        public uint Stock { get; set; }
-        public uint FirstPrice { get; set; }
+        public int Price { get; set; }
+        public int Stock { get; set; }
+        public int FirstPrice { get; set; }
         public bool ProductDiscount { get; set; } = false;
 
     }

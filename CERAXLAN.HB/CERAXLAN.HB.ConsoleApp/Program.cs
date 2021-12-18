@@ -12,9 +12,9 @@ namespace CERAXLAN.HB.ConsoleApp
         {
             Console.WriteLine("------------------------------");
             Console.WriteLine("-----CERAXLAN HB Case Tests---------");
-            Console.WriteLine("Enter the Endpoint Adress(Example: http://localhost:8080/)");
-            Helper.EndPointAddress = Console.ReadLine();
-
+            //Console.WriteLine("Enter the Endpoint Adress(Example: http://localhost:8080/)");
+            //Helper.EndPointAddress = Console.ReadLine();
+            Helper.EndPointAddress = "https://localhost:44343/";
 
             string scenarioNumber = string.Empty;
             while (true)

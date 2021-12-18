@@ -15,4 +15,9 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
         get_campaign_info = 5,
         increase_time = 6
     }
+    public enum RestType
+    {
+        Get,
+        Post
+    }
 }

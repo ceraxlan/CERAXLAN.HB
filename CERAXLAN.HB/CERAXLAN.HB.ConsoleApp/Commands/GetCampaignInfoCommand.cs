@@ -29,5 +29,10 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
 
             this.Name = request[0];
         }
+
+        public override RestType GetRestType()
+        {
+            return RestType.Get;
+        }
     }
 }

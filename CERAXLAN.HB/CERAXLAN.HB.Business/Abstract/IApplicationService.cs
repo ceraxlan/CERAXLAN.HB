@@ -10,13 +10,13 @@ namespace CERAXLAN.HB.Business.Abstract
 {
     public interface IApplicationService
     {
-        uint GetTime();      
+        int GetTime();      
         void CheckCampaigns();
         ResultMessage CreateProduct(Product product);
         ResultMessage GetProductInfo(string productCode);
         ResultMessage CreateOrder(Order order);
         ResultMessage CreateCampaign(Campaign campaign);
         ResultMessage GetCampaignInfo(string name);
-        ResultMessage IncreaseTime(uint value);
+        ResultMessage IncreaseTime(int value);
     }
 }

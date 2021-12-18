@@ -9,7 +9,7 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
     public class GetIncreaseTimeCommand : BaseCommand
     {
         public override string ActionMetod => "api/Campaigns/IncreaseTime";
-        public uint Hour { get; set; }
+        public int Hour { get; set; }
         public GetIncreaseTimeCommand(List<string> request)
         {
             this.Valid(request);
@@ -24,10 +24,15 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
 
         public override void Valid(List<string> request)
         {
-            if (!uint.TryParse(request[0], out uint hour))
+            if (!int.TryParse(request[0], out int hour))
                 throw new Exception("Hour must be greater than zero");
 
             this.Hour = hour;
+        }
+
+        public override RestType GetRestType()
+        {
+            return RestType.Get;
         }
     }
 }

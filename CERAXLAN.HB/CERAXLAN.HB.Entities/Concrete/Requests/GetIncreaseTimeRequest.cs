@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CERAXLAN.HB.Entities.Concrete
+namespace CERAXLAN.HB.Entities.Concrete.Requests
 {
-    public static class Application
+    public class GetIncreaseTimeRequest
     {
-        public static int Hour { get; set; } 
+        public int Hour { get; set; }
     }
 }

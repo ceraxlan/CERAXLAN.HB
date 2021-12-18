@@ -25,14 +25,14 @@ namespace CERAXLAN.HB.Business.Concrete
             _orderService = orderService;
         }
 
-        public uint GetTime()
+        public int GetTime()
         {
-            return Application.time;
+            return Application.Hour;
         }
 
-        public ResultMessage IncreaseTime(uint value)
+        public ResultMessage IncreaseTime(int value)
         {
-            Application.time += value;
+            Application.Hour += value;
             CheckCampaigns();
             return new ResultMessage { Message = "Time is " + GetTime() + ":00" };
         }
@@ -47,8 +47,8 @@ namespace CERAXLAN.HB.Business.Concrete
                 {
                     var product = _productService.Get(campaign.ProductCode);
                     Random r = new Random();
-                    var percentage = (uint)r.Next(0, campaign.PriceManipulationLimit);
-                    var discount = (product.Price * percentage) / 100;
+                    var percentage = (int)r.Next(0, campaign.PriceManipulationLimit);
+                    var discount = (int)(product.Price * percentage) / 100;
                     if (product.Price > discount)
                     {
                         product.Price -= discount;
@@ -74,7 +74,21 @@ namespace CERAXLAN.HB.Business.Concrete
         {
             
             var _product = _productService.Get(product.ProductCode);
-            if (_product != null) return new ResultMessage { Message = "This product is available !" };
+            if (_product != null) 
+            {
+                var updatedProduct = _productService.Update(product);
+                return new ResultMessage
+                {
+                    Message = "This product is available and has now been updated !",
+                    Result = new ProductView
+                    {
+                        ProductCode = updatedProduct.ProductCode,
+                        Price = updatedProduct.Price,
+                        Stock = updatedProduct.Stock
+                    }
+                };
+            }
+            
 
             var productBase = _productService.Create(product);
             return new ResultMessage { Message = "Product created ", Result = new ProductView
@@ -141,7 +155,21 @@ namespace CERAXLAN.HB.Business.Concrete
         public ResultMessage CreateCampaign(Campaign campaign)
         {
             var _campaign = _campaignService.Get(campaign.Name);
-            if (_campaign != null) return new ResultMessage { Message = "This Campaign is available !" };
+            if (_campaign != null) 
+            {
+                var updatedCampaign = _campaignService.Update(_campaign);
+                return new ResultMessage { Message = "This campaign is available and has now been updated !",
+                    Result = new CampaignView
+                    {
+                        Name = updatedCampaign.Name,
+                        ProductCode = updatedCampaign.ProductCode,
+                        Duration = updatedCampaign.Duration,
+                        Limit = updatedCampaign.PriceManipulationLimit,
+                        TargetSalesCount = updatedCampaign.TargetSalesCount
+                    }
+                };
+            }
+                
 
             var campaignBase = _campaignService.Create(campaign);
             CheckCampaigns();

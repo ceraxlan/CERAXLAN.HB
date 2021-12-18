@@ -9,6 +9,6 @@ namespace CERAXLAN.HB.Entities.Concrete.ViewModels
     public class OrderView
     {
         public string ProductCode { get; set; }
-        public uint Quantity { get; set; }
+        public int Quantity { get; set; }
     }
 }

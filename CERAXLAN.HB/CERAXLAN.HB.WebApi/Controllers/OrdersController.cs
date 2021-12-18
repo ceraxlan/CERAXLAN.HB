@@ -20,9 +20,9 @@ namespace CERAXLAN.HB.WebApi.Controllers
         }
       
         [HttpPost("CreateOrder")]
-        public IActionResult CreateOrder(string productCode,uint quantity)
+        public IActionResult CreateOrder(Order order)
         {
-            return Ok(_applicationService.CreateOrder(new Order { ProductCode=productCode,Quantity=quantity }));
+            return Ok(_applicationService.CreateOrder(order));
         }      
     }
 }

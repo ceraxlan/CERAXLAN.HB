@@ -14,7 +14,7 @@ namespace CERAXLAN.HB.Entities.Concrete
         [Key]
         public int Id { get; set; }
         public string ProductCode { get; set; }
-        public uint Quantity { get; set; }
+        public int Quantity { get; set; }
         
     }
 }

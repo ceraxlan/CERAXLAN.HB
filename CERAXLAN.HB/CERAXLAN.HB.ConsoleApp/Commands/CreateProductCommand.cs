@@ -10,7 +10,7 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
     {
         public override string ActionMetod => "api/Products/CreateProduct";
         public string ProductCode { get; set; }
-        public uint Price { get; set; }
+        public int Price { get; set; }
         public int Stock { get; set; }
 
         public CreateProductCommand(List<string> request)
@@ -32,7 +32,7 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             if (string.IsNullOrWhiteSpace(request[0]))
                 throw new Exception("ProductCode is not valid");
 
-            if (!uint.TryParse(request[1], out uint price))
+            if (!int.TryParse(request[1], out int price))
                 throw new Exception($"Price must be greater than zero");
 
             if (!int.TryParse(request[2], out int stock))
@@ -41,6 +41,11 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             this.ProductCode = request[0];
             this.Price = price;
             this.Stock = stock;
+        }
+
+        public override RestType GetRestType()
+        {
+            return RestType.Post;
         }
     }
 }

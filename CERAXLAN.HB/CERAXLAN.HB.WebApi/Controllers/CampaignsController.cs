@@ -1,5 +1,6 @@
 ﻿using CERAXLAN.HB.Business.Abstract;
 using CERAXLAN.HB.Entities.Concrete;
+using CERAXLAN.HB.Entities.Concrete.Requests;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -26,22 +27,15 @@ namespace CERAXLAN.HB.WebApi.Controllers
         }
 
         [HttpGet("IncreaseTime")]
-        public IActionResult IncreaseTime(uint value)
+        public IActionResult IncreaseTime(int hour)
         {
-            return Ok(_applicationService.IncreaseTime(value));
+            return Ok(_applicationService.IncreaseTime(hour));
         }
 
         [HttpPost("CreateCampaign")]
-        public IActionResult CreateCampaign(string name,string productCode,uint duration,int priceManipulationLimit,uint targetSalesCount)
+        public IActionResult CreateCampaign(Campaign campaign)
         {
-            return Ok(_applicationService.CreateCampaign(new Campaign 
-            {
-                Name=name,
-                ProductCode =productCode,
-                Duration=duration,
-                PriceManipulationLimit=priceManipulationLimit,
-                TargetSalesCount=targetSalesCount
-            }));
+            return Ok(_applicationService.CreateCampaign(campaign));
         }
 
       

@@ -11,9 +11,9 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
         public override string ActionMetod => "api/Campaigns/CreateCampaign";
         public string Name { get; set; }
         public string ProductCode { get; set; }
-        public uint Duration { get; set; }
+        public int Duration { get; set; }
         public int PriceManipulationLimit { get; set; }
-        public uint TargetSalesCount { get; set; }
+        public int TargetSalesCount { get; set; }
         public CreateCampaignCommand(List<string> request)
         {
             this.Valid(request);
@@ -38,13 +38,13 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             if (string.IsNullOrWhiteSpace(request[1]))
                 throw new Exception("ProductCode is not valid");
 
-            if (!uint.TryParse(request[2], out uint duration))
+            if (!int.TryParse(request[2], out int duration))
                 throw new Exception("Duration must be greater than zero");
 
             if (!int.TryParse(request[3], out int priceManipulationLimit))
                 throw new Exception("PriceManipulationLimit must be greater than zero");
 
-            if (!uint.TryParse(request[4], out uint targetSalesCount))
+            if (!int.TryParse(request[4], out int targetSalesCount))
                 throw new Exception("TargetSalesCount must be greater than zero");
 
             this.Name = request[0];
@@ -52,6 +52,11 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             this.Duration = duration;
             this.PriceManipulationLimit = priceManipulationLimit;
             this.TargetSalesCount = targetSalesCount;
+        }
+
+        public override RestType GetRestType()
+        {
+            return RestType.Post;
         }
     }
 }

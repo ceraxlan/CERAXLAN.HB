@@ -10,9 +10,9 @@ namespace CERAXLAN.HB.Entities.Concrete.ViewModels
     {
         public string Name { get; set; }
         public string Status { get; set; }
-        public uint TargetSales { get; set; }
-        public uint TotalSales { get; set; }
-        public uint Turnover { get; set; }
-        public uint AverageItemPrice { get; set; }
+        public int TargetSales { get; set; }
+        public int TotalSales { get; set; }
+        public int Turnover { get; set; }
+        public int AverageItemPrice { get; set; }
     }
 }

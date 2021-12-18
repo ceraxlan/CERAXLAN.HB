@@ -10,9 +10,9 @@ namespace CERAXLAN.HB.Entities.Concrete.ViewModels
     {
         public string Name { get; set; }
         public string ProductCode { get; set; }
-        public uint Duration { get; set; }
+        public int Duration { get; set; }
         public int Limit { get; set; }
-        public uint TargetSalesCount { get; set; }
+        public int TargetSalesCount { get; set; }
         
     }
 }

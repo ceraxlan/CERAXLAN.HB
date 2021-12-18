@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CERAXLAN.HB.Entities.Concrete
+namespace CERAXLAN.HB.Entities.Concrete.Requests
 {
-    public static class Application
+    public abstract class CreateProductRequest
     {
-        public static int Hour { get; set; } 
+
     }
 }

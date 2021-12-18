@@ -53,7 +53,7 @@ namespace CERAXLAN.HB.Business.Concrete
         public bool IsActiveCampaign(string name)
         {
             var campaing = Get(name);           
-            return (campaing.Duration > Application.time) && (campaing.TotalSales < campaing.TargetSalesCount) ? true : false;
+            return (campaing.Duration > Application.Hour) && (campaing.TotalSales < campaing.TargetSalesCount) ? true : false;
             
         }
         public Campaign GetCampaignWithProductCode(string productCode)

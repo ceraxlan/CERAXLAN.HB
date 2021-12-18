@@ -9,7 +9,7 @@ namespace CERAXLAN.HB.Entities.Concrete.ViewModels
     public class ProductView
     {
         public string ProductCode { get; set; }
-        public uint Price { get; set; }
-        public uint Stock { get; set; }
+        public int Price { get; set; }
+        public int Stock { get; set; }
     }
 }

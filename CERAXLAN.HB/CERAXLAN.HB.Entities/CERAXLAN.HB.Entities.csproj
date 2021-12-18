@@ -8,4 +8,8 @@
     <ProjectReference Include="..\CERAXLAN.HB.Core\CERAXLAN.HB.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Bases\" />
+  </ItemGroup>
+
 </Project>

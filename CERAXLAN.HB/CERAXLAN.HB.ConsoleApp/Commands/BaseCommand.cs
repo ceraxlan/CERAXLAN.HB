@@ -11,6 +11,7 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
 {
     public abstract class BaseCommand
     {
+        public abstract RestType GetRestType();
         public abstract object GetRequest();
 
         public abstract void Valid(List<string> request);
@@ -20,12 +21,34 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
         HttpClient httpClient = new HttpClient();
         public virtual void Execute()
         {
-            var json = JsonConvert.SerializeObject(this.GetRequest());
+            
             string url = Helper.EndPointAddress + this.ActionMetod;
-            Task<HttpResponseMessage> response = httpClient.PostAsync(url, new StringContent(json, Encoding.UTF8, "application/json"));
-            string result = response.Result.Content.ReadAsStringAsync().Result;
-            Console.WriteLine($"Called to {url} address");
-            Console.WriteLine($"Result : {result}");
+            var restType = this.GetRestType();
+            Task<HttpResponseMessage> response;
+            string result;
+            switch (restType)
+            {
+                case RestType.Get:
+                    {
+                        url += this.GetRequest();
+                        response = httpClient.GetAsync(url);
+                        result = response.Result.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine($"Called to {url} address");
+                        Console.WriteLine($"Result : {result}");
+                    }
+                   
+                    break;
+                case RestType.Post:
+                    {
+                        var json = JsonConvert.SerializeObject(this.GetRequest());
+                        response = httpClient.PostAsync(url, new StringContent(json, Encoding.UTF8, "application/json"));
+                        result = response.Result.Content.ReadAsStringAsync().Result;
+                        Console.WriteLine($"Called to {url} address");
+                        Console.WriteLine($"Result : {result}");
+                    }
+                     
+                    break;            
+            }                             
         }
     }
 }

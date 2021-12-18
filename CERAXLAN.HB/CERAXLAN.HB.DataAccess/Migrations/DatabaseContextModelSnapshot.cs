@@ -23,8 +23,8 @@ namespace CERAXLAN.HB.DataAccess.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<long>("Duration")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Duration")
+                        .HasColumnType("int");
 
                     b.Property<int>("PriceManipulationLimit")
                         .HasColumnType("int");
@@ -35,17 +35,17 @@ namespace CERAXLAN.HB.DataAccess.Migrations
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("TargetSalesCount")
-                        .HasColumnType("bigint");
+                    b.Property<int>("TargetSalesCount")
+                        .HasColumnType("int");
 
-                    b.Property<long>("TotalPayment")
-                        .HasColumnType("bigint");
+                    b.Property<int>("TotalPayment")
+                        .HasColumnType("int");
 
-                    b.Property<long>("TotalSales")
-                        .HasColumnType("bigint");
+                    b.Property<int>("TotalSales")
+                        .HasColumnType("int");
 
-                    b.Property<long>("Turnover")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Turnover")
+                        .HasColumnType("int");
 
                     b.HasKey("Name");
 
@@ -62,8 +62,8 @@ namespace CERAXLAN.HB.DataAccess.Migrations
                     b.Property<string>("ProductCode")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("Quantity")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -75,17 +75,17 @@ namespace CERAXLAN.HB.DataAccess.Migrations
                     b.Property<string>("ProductCode")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<long>("FirstPrice")
-                        .HasColumnType("bigint");
+                    b.Property<int>("FirstPrice")
+                        .HasColumnType("int");
 
-                    b.Property<long>("Price")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.Property<bool>("ProductDiscount")
                         .HasColumnType("bit");
 
-                    b.Property<long>("Stock")
-                        .HasColumnType("bigint");
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
 
                     b.HasKey("ProductCode");
 

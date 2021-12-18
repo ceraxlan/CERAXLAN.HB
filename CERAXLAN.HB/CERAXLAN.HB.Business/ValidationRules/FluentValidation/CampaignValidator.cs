@@ -12,14 +12,11 @@ namespace CERAXLAN.HB.Business.ValidationRules.FluentValidation
 {
     class CampaignValidator : AbstractValidator<Campaign>
     {
-        private ICampaignService _campaignService;
-        public CampaignValidator(ICampaignService campaignService)
-        {
-            _campaignService = campaignService;
-            
+        
+        public CampaignValidator()
+        {                   
             RuleFor(x => x.ProductCode).NotEmpty().WithMessage("Product code is required.");
-            RuleFor(x => x.ProductCode).NotEqual("").WithMessage("Product code is required.");
-            RuleFor(x => x.ProductCode).Must(_campaignService.IsExistName).WithMessage("This Product code already exists.");
+            RuleFor(x => x.ProductCode).NotEqual("").WithMessage("Product code is required.");          
         }
 
        
