@@ -43,6 +43,7 @@ namespace CERAXLAN.HB.Business.Concrete
 
         public Campaign Update(Campaign campaign)
         {
+            
             return _campaignDal.Update(campaign);
         }
         public bool IsExistName(string name)

@@ -36,9 +36,6 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             this.Quantity = quentity;
         }
 
-        public override RestType GetRestType()
-        {
-            return RestType.Post;
-        }
+       
     }
 }

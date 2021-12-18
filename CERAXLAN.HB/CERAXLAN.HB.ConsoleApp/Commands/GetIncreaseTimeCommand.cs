@@ -30,9 +30,6 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             this.Hour = hour;
         }
 
-        public override RestType GetRestType()
-        {
-            return RestType.Get;
-        }
+        
     }
 }

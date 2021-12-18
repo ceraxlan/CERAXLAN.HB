@@ -54,9 +54,6 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             this.TargetSalesCount = targetSalesCount;
         }
 
-        public override RestType GetRestType()
-        {
-            return RestType.Post;
-        }
+       
     }
 }

@@ -33,3 +33,4 @@ increase_time 1
 get_product_info P11
 increase_time 1
 get_campaign_info C11
+increase_time 0

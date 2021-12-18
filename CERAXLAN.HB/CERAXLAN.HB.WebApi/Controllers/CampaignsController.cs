@@ -20,16 +20,16 @@ namespace CERAXLAN.HB.WebApi.Controllers
             _applicationService = applicationService;
         }
 
-        [HttpGet("GetCampaignInfo")]
-        public IActionResult GetCampaignInfo(string name)
+        [HttpPost("GetCampaignInfo")]
+        public IActionResult GetCampaignInfo(GetCampaignInfoRequest request)
         {
-            return Ok(_applicationService.GetCampaignInfo(name));
+            return Ok(_applicationService.GetCampaignInfo(request.Name));
         }
 
-        [HttpGet("IncreaseTime")]
-        public IActionResult IncreaseTime(int hour)
+        [HttpPost("IncreaseTime")]
+        public IActionResult IncreaseTime(GetIncreaseTimeRequest request)
         {
-            return Ok(_applicationService.IncreaseTime(hour));
+            return Ok(_applicationService.IncreaseTime(request.Hour));
         }
 
         [HttpPost("CreateCampaign")]

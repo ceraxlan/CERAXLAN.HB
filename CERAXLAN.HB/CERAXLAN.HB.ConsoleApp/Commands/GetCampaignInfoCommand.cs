@@ -8,7 +8,7 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
 {
     public class GetCampaignInfoCommand : BaseCommand
     {
-        public override string ActionMetod => "api/Campaigns/GetCampanignInfo";
+        public override string ActionMetod => "api/Campaigns/GetCampaignInfo";
         public string Name { get; set; }
         public GetCampaignInfoCommand(List<string> request)
         {
@@ -30,9 +30,6 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             this.Name = request[0];
         }
 
-        public override RestType GetRestType()
-        {
-            return RestType.Get;
-        }
+        
     }
 }

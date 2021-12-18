@@ -20,10 +20,10 @@ namespace CERAXLAN.HB.WebApi.Controllers
             _applicationService = applicationService;
         }
    
-        [HttpGet("GetProductInfo")]
-        public IActionResult GetProductInfo(string productCode)
+        [HttpPost("GetProductInfo")]
+        public IActionResult GetProductInfo(GetProductInfoRequest request)
         {
-            return Ok(_applicationService.GetProductInfo(productCode));
+            return Ok(_applicationService.GetProductInfo(request.ProductCode));
         }
 
         [HttpPost("CreateProduct")]

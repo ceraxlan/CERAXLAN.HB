@@ -77,7 +77,7 @@ namespace CERAXLAN.HB.ConsoleApp
 
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("----------------------");
-            Console.WriteLine("Scenario is complete.");
+            Console.WriteLine("Scenario is complete.Time reset");
             Console.WriteLine("----------------------");
             Console.ForegroundColor = ConsoleColor.White;
         }

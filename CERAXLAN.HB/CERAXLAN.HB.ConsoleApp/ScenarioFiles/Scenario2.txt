@@ -12,3 +12,4 @@ increase_time 1
 get_product_info P4
 increase_time 2
 get_campaign_info C1
+increase_time 0

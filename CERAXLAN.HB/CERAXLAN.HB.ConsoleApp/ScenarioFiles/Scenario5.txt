@@ -22,3 +22,4 @@ increase_time 1
 create_order P13 10
 get_product_info P13
 get_campaign_info C13
+increase_time 0

@@ -43,9 +43,6 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             this.Stock = stock;
         }
 
-        public override RestType GetRestType()
-        {
-            return RestType.Post;
-        }
+        
     }
 }

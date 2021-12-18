@@ -6,3 +6,4 @@ create_order P12 10
 increase_time 1
 get_product_info P12
 get_campaign_info C12
+increase_time 0

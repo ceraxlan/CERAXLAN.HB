@@ -30,9 +30,6 @@ namespace CERAXLAN.HB.ConsoleApp.Commands
             this.ProductCode = request[0];
         }
 
-        public override RestType GetRestType()
-        {
-            return RestType.Get;
-        }
+        
     }
 }

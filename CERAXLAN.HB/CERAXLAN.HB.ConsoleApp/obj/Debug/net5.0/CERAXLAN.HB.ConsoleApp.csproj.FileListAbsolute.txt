@@ -15,4 +15,3 @@ C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.ConsoleApp\o
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.ConsoleApp\obj\Debug\net5.0\ref\CERAXLAN.HB.ConsoleApp.dll
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.ConsoleApp\obj\Debug\net5.0\CERAXLAN.HB.ConsoleApp.pdb
 C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.ConsoleApp\obj\Debug\net5.0\CERAXLAN.HB.ConsoleApp.genruntimeconfig.cache
-C:\Users\er_as\Documents\GitHub\CERAXLAN.HB\CERAXLAN.HB\CERAXLAN.HB.ConsoleApp\obj\Debug\net5.0\CERAXLAN.HB.ConsoleApp.csproj.AssemblyReference.cache

@@ -21,7 +21,8 @@ namespace CERAXLAN.HB.Business.Concrete
         }    
        
         public Product Create(Product product)
-        {          
+        {
+            product.FirstPrice = product.Price;
             return  _productDal.Add(product);
         }
   

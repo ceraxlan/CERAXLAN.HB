@@ -32,7 +32,8 @@ namespace CERAXLAN.HB.Business.Concrete
 
         public ResultMessage IncreaseTime(int value)
         {
-            Application.Hour += value;
+            if (value == 0) { Application.Hour = 0; } else { Application.Hour += value; }
+            
             CheckCampaigns();
             return new ResultMessage { Message = "Time is " + GetTime() + ":00" };
         }
@@ -47,12 +48,12 @@ namespace CERAXLAN.HB.Business.Concrete
                 {
                     var product = _productService.Get(campaign.ProductCode);
                     Random r = new Random();
-                    var percentage = (int)r.Next(0, campaign.PriceManipulationLimit);
+                    var percentage = (int)r.Next(1, campaign.PriceManipulationLimit);
                     var discount = (int)(product.Price * percentage) / 100;
                     if (product.Price > discount)
                     {
                         product.Price -= discount;
-                        product.ProductDiscount = true;
+                        
                         _productService.Update(product);
                     }
                 }
@@ -63,7 +64,7 @@ namespace CERAXLAN.HB.Business.Concrete
                     _campaignService.Update(campaign);
                     var product = _productService.Get(campaign.ProductCode);
                     product.Price = product.FirstPrice;
-                    product.ProductDiscount = false;
+                    
                     _productService.Update(product);
                 }
             }
@@ -76,6 +77,7 @@ namespace CERAXLAN.HB.Business.Concrete
             var _product = _productService.Get(product.ProductCode);
             if (_product != null) 
             {
+                product.FirstPrice = product.Price;
                 var updatedProduct = _productService.Update(product);
                 return new ResultMessage
                 {
@@ -157,7 +159,9 @@ namespace CERAXLAN.HB.Business.Concrete
             var _campaign = _campaignService.Get(campaign.Name);
             if (_campaign != null) 
             {
-                var updatedCampaign = _campaignService.Update(_campaign);
+                
+                var updatedCampaign = _campaignService.Update(campaign);
+                CheckCampaigns();
                 return new ResultMessage { Message = "This campaign is available and has now been updated !",
                     Result = new CampaignView
                     {
