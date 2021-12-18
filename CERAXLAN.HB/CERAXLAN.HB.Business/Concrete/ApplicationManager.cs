@@ -85,6 +85,7 @@ namespace CERAXLAN.HB.Business.Concrete
             }};
         }
 
+        
         public ResultMessage GetProductInfo(string productCode)
         {
             var productBase = _productService.Get(productCode);
@@ -98,6 +99,7 @@ namespace CERAXLAN.HB.Business.Concrete
             }};
         }
 
+        [FluentValidationAspect(typeof(OrderValidator))]
         public ResultMessage CreateOrder(Order order)
         {
             var product = _productService.Get(order.ProductCode);
@@ -135,6 +137,7 @@ namespace CERAXLAN.HB.Business.Concrete
             }
         }
 
+        [FluentValidationAspect(typeof(CampaignValidator))]
         public ResultMessage CreateCampaign(Campaign campaign)
         {
             var _campaign = _campaignService.Get(campaign.Name);

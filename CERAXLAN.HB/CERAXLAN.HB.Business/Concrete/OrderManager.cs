@@ -22,7 +22,6 @@ namespace CERAXLAN.HB.Business.Concrete
             
         }
 
-        //[FluentValidationAspect(typeof(OrderValidator))]
         public Order Create(Order order)
         {        
             return _orderDal.Add(order);

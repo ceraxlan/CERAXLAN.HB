@@ -11,18 +11,16 @@ using System.Threading.Tasks;
 namespace CERAXLAN.HB.Business.ValidationRules.FluentValidation
 {
     public class ProductValidator : AbstractValidator<Product>
-    {
-        //private IProductService _productService;
+    {       
         public ProductValidator()
         {
-           // _productService = productService;
-
+           
             RuleFor(x => x.ProductCode).NotEmpty().WithMessage("Product code is required.");
             RuleFor(x => x.ProductCode).NotEqual("").WithMessage("Product code is required.");
-            //RuleFor(x => x.ProductCode).Must(_productService.IsExistName).WithMessage("This Product code already exists.");
 
-        }
-
-        
+            RuleFor(x => x.Price).NotEmpty().WithMessage("Price is required.");           
+            RuleFor(x => x.Stock).NotEmpty().WithMessage("Stock is required.");
+            
+        }      
     }
 }

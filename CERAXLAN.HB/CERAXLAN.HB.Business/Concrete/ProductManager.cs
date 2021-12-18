@@ -18,13 +18,8 @@ namespace CERAXLAN.HB.Business.Concrete
         public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;          
-        }
-
-        public ProductManager()
-        {
-        }
-
-        [FluentValidationAspect(typeof(ProductValidator))]
+        }    
+       
         public Product Create(Product product)
         {          
             return  _productDal.Add(product);
@@ -47,13 +42,11 @@ namespace CERAXLAN.HB.Business.Concrete
 
         public Product Update(Product product)
         {
-            //_campaignService.GetCampaignWithProductCode(product.ProductCode);
             return _productDal.Update(product);
         }
         
         public bool IsExistName(string name)
         {
-
             return _productDal.Get(p => p.ProductCode == name)==null ? true:false;
         }
     }

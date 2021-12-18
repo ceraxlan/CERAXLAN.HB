@@ -15,14 +15,12 @@ namespace CERAXLAN.HB.Business.Concrete
     public class CampaignManager : ICampaignService
     {
         private ICampaignDal _campaignDal;
-        //private readonly IProductService productService;
        
         public CampaignManager(ICampaignDal campaignDal)
         {
             _campaignDal = campaignDal;         
         }
-
-       // [FluentValidationAspect(typeof(CampaignValidator))]
+      
         public Campaign Create(Campaign campaign)
         {
             return _campaignDal.Add(campaign);
