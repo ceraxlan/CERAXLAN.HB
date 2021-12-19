@@ -33,9 +33,9 @@ namespace CERAXLAN.HB.WebApi.Controllers
         }
 
         [HttpPost("CreateCampaign")]
-        public IActionResult CreateCampaign(Campaign campaign)
+        public IActionResult CreateCampaign(CreateCampaignRequest request)
         {
-            return Ok(_applicationService.CreateCampaign(campaign));
+            return Ok(_applicationService.CreateCampaign(new Campaign {Name=request.Name,ProductCode=request.ProductCode,Duration=request.Duration,PriceManipulationLimit=request.PriceManipulationLimit, TargetSalesCount=request.TargetSalesCount }));
         }
 
       

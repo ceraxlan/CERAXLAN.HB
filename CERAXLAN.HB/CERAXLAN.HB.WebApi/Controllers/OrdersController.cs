@@ -1,5 +1,6 @@
 ﻿using CERAXLAN.HB.Business.Abstract;
 using CERAXLAN.HB.Entities.Concrete;
+using CERAXLAN.HB.Entities.Concrete.Requests;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,9 +21,9 @@ namespace CERAXLAN.HB.WebApi.Controllers
         }
       
         [HttpPost("CreateOrder")]
-        public IActionResult CreateOrder(Order order)
+        public IActionResult CreateOrder(CreateOrderRequest request)
         {
-            return Ok(_applicationService.CreateOrder(order));
+            return Ok(_applicationService.CreateOrder(new Order {ProductCode=request.ProductCode,Quantity=request.Quantity }));
         }      
     }
 }

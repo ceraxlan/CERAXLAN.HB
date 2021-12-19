@@ -168,7 +168,7 @@ namespace CERAXLAN.HB.Business.Concrete
                         Name = updatedCampaign.Name,
                         ProductCode = updatedCampaign.ProductCode,
                         Duration = updatedCampaign.Duration,
-                        Limit = updatedCampaign.PriceManipulationLimit,
+                        PriceManipulationLimit = updatedCampaign.PriceManipulationLimit,
                         TargetSalesCount = updatedCampaign.TargetSalesCount
                     }
                 };
@@ -182,7 +182,7 @@ namespace CERAXLAN.HB.Business.Concrete
                 Name = campaignBase.Name,
                 ProductCode =campaignBase.ProductCode,
                 Duration=campaignBase.Duration,
-                Limit=campaignBase.PriceManipulationLimit,
+                PriceManipulationLimit=campaignBase.PriceManipulationLimit,
                 TargetSalesCount=campaignBase.TargetSalesCount
             }};
         }

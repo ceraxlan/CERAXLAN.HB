@@ -12,7 +12,10 @@ namespace CERAXLAN.HB.Business.ValidationRules.FluentValidation
     {
         public OrderValidator()
         {
-            //
+            RuleFor(x => x.ProductCode).NotEmpty().WithMessage("Product code is required.");
+
+            RuleFor(x => x.Quantity).NotEmpty().WithMessage("Quantity is required.");
+            RuleFor(x => x.Quantity).GreaterThanOrEqualTo(1);
         }
     }
 }

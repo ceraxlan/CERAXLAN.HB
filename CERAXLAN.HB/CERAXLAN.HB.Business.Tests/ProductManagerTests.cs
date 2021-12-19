@@ -15,8 +15,11 @@ namespace CERAXLAN.HB.Business.Tests
         public void Create_Product()
         {
             Mock<IProductDal> mock = new Mock<IProductDal>();
+            
             ProductManager productManager = new ProductManager(mock.Object);
             productManager.Create(new Product());
         }
+
+        
     }
 }

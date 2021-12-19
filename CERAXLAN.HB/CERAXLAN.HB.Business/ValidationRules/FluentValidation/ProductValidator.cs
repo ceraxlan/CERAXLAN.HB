@@ -16,11 +16,13 @@ namespace CERAXLAN.HB.Business.ValidationRules.FluentValidation
         {
            
             RuleFor(x => x.ProductCode).NotEmpty().WithMessage("Product code is required.");
-            RuleFor(x => x.ProductCode).NotEqual("").WithMessage("Product code is required.");
-
-            RuleFor(x => x.Price).NotEmpty().WithMessage("Price is required.");           
-            RuleFor(x => x.Stock).NotEmpty().WithMessage("Stock is required.");
             
+
+            RuleFor(x => x.Price).NotEmpty().WithMessage("Price is required.");
+            RuleFor(x => x.Price).GreaterThanOrEqualTo(1);
+            
+            RuleFor(x => x.Stock).NotEmpty().WithMessage("Stock is required.");
+            RuleFor(x => x.Stock).GreaterThanOrEqualTo(0);
         }      
     }
 }

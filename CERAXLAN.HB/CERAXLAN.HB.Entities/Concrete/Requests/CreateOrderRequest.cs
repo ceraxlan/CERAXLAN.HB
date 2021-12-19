@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CERAXLAN.HB.Entities.Concrete.ViewModels
+namespace CERAXLAN.HB.Entities.Concrete.Requests
 {
-    public class ProductView:ProductBase
+    public class CreateOrderRequest :OrderBase
     {
-        
     }
 }

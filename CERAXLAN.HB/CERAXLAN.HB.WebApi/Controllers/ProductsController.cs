@@ -1,6 +1,7 @@
 ﻿using CERAXLAN.HB.Business.Abstract;
 using CERAXLAN.HB.Entities.Concrete;
 using CERAXLAN.HB.Entities.Concrete.Requests;
+using CERAXLAN.HB.Entities.Concrete.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -27,9 +28,9 @@ namespace CERAXLAN.HB.WebApi.Controllers
         }
 
         [HttpPost("CreateProduct")]
-        public IActionResult CreateProduct(Product product)
+        public IActionResult CreateProduct(CreateProductRequest request)
         {         
-            return Ok(_applicationService.CreateProduct(product));
+            return Ok(_applicationService.CreateProduct(new Product { ProductCode= request.ProductCode,Price= request.Price,Stock= request.Stock }));
         }      
     }
 }

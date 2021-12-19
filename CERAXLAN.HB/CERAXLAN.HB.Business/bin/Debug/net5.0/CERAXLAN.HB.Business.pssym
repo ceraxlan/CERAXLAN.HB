@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Symbols LinesOfCode="218" PostSharpLinesOfCode="0" EnhancedTypesCount="1" SchemaVersion="1" PostSharpVersion="6.10.5.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+<Symbols LinesOfCode="225" PostSharpLinesOfCode="0" EnhancedTypesCount="1" SchemaVersion="1" PostSharpVersion="6.10.5.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
   <Class Class="#1=T:[CERAXLAN.HB.Core]CERAXLAN.HB.Core.Aspects.Postsharp.ValidationAspects.FluentValidationAspect">
-    <Instance Declaration="#2=M:[CERAXLAN.HB.Business]CERAXLAN.HB.Business.Concrete.ApplicationManager::CreateProduct(CERAXLAN.HB.Entities.Concrete.Product)" Id="3bb70b3c1208de80">
+    <Instance Declaration="#2=M:[CERAXLAN.HB.Business]CERAXLAN.HB.Business.Concrete.ApplicationManager::CreateProduct(CERAXLAN.HB.Entities.Concrete.Product)" Id="3bb70b3c67d55ed1">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3=Wrapped by advice(s) OnEntry" Ordinal="0" />
       </Target>
     </Instance>
-    <Instance Declaration="#4=M:[CERAXLAN.HB.Business]CERAXLAN.HB.Business.Concrete.ApplicationManager::CreateOrder(CERAXLAN.HB.Entities.Concrete.Order)" Id="3bb70b3c80ac72d8">
+    <Instance Declaration="#4=M:[CERAXLAN.HB.Business]CERAXLAN.HB.Business.Concrete.ApplicationManager::CreateOrder(CERAXLAN.HB.Entities.Concrete.Order)" Id="3bb70b3ce1059c0b">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" />
       </Target>
     </Instance>
-    <Instance Declaration="#5=M:[CERAXLAN.HB.Business]CERAXLAN.HB.Business.Concrete.ApplicationManager::CreateCampaign(CERAXLAN.HB.Entities.Concrete.Campaign)" Id="3bb70b3c0b42afba">
+    <Instance Declaration="#5=M:[CERAXLAN.HB.Business]CERAXLAN.HB.Business.Concrete.ApplicationManager::CreateCampaign(CERAXLAN.HB.Entities.Concrete.Campaign)" Id="3bb70b3c7a030a07">
       <Target LinesAvoided="2">
         <JoinPoint Advising="#1" Description="#3" Ordinal="2" />
       </Target>
