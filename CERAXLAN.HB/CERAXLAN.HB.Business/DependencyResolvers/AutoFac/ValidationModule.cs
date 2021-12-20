@@ -14,7 +14,9 @@ namespace CERAXLAN.HB.Business.DependencyResolvers.AutoFac
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<ProductValidator>().As<IValidator<Product>>().SingleInstance();           
+            builder.RegisterType<ProductValidator>().As<IValidator<Product>>().SingleInstance();
+            builder.RegisterType<OrderValidator>().As<IValidator<Order>>().SingleInstance();
+            builder.RegisterType<CampaignValidator>().As<IValidator<Campaign>>().SingleInstance();
         }
     }
 }
