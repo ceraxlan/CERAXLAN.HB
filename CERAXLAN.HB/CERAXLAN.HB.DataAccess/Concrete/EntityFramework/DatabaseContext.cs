@@ -1,7 +1,10 @@
 ﻿using CERAXLAN.HB.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
+
+using Microsoft.IdentityModel.Protocols;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +21,11 @@ namespace CERAXLAN.HB.DataAccess.Concrete.EntityFramework
       
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("User Id=ceraslan; Password=ceraxlan; Server=CERAXLAN; Database=HB; Integrated Security=True; Connection Timeout=60;");
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer("User Id=ceraslan; Password=ceraxlan; Server=CERAXLAN; Database=HB; Integrated Security=True; Connection Timeout=60;");
+            }
+                                       
         }
     }
 }

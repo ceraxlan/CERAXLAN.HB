@@ -44,7 +44,8 @@ namespace CERAXLAN.HB.WebApi
         {
 
             services.AddControllers();
-                   
+            
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CERAXLAN.HB.WebApi", Version = "v1" });

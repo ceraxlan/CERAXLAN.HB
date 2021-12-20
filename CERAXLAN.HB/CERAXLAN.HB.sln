@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CERAXLAN.HB.Core", "CERAXLA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CERAXLAN.HB.Business.Tests", "CERAXLAN.HB.Business.Tests\CERAXLAN.HB.Business.Tests.csproj", "{CC216214-09B4-4118-81FB-297068BC2839}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CERAXLAN.HB.ConsoleApp", "CERAXLAN.HB.ConsoleApp\CERAXLAN.HB.ConsoleApp.csproj", "{A026EAD0-B542-4603-AA1C-5F50EB79D44B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CERAXLAN.HB.ConsoleApp", "CERAXLAN.HB.ConsoleApp\CERAXLAN.HB.ConsoleApp.csproj", "{A026EAD0-B542-4603-AA1C-5F50EB79D44B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CERAXLAN.HB.DataAccess.Tests", "CERAXLAN.HB.DataAccess.Tests\CERAXLAN.HB.DataAccess.Tests.csproj", "{F3D8B7A3-96B3-4FFF-A879-86AC8C5C0952}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A026EAD0-B542-4603-AA1C-5F50EB79D44B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A026EAD0-B542-4603-AA1C-5F50EB79D44B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A026EAD0-B542-4603-AA1C-5F50EB79D44B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D8B7A3-96B3-4FFF-A879-86AC8C5C0952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D8B7A3-96B3-4FFF-A879-86AC8C5C0952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D8B7A3-96B3-4FFF-A879-86AC8C5C0952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D8B7A3-96B3-4FFF-A879-86AC8C5C0952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
