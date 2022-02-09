@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1033e0db-4e6b-49b5-b7c1-ed73d4331daf": {
+      "ProjectGuid": "1033e0db-4e6b-49b5-b7c1-ed73d4331daf",
+      "DisplayName": "CERAXLAN.HB.Core",
+      "ColorIndex": 0
+    },
+    "3ea71d9d-2d46-4568-a210-4b7b6c848a8d": {
+      "ProjectGuid": "3ea71d9d-2d46-4568-a210-4b7b6c848a8d",
+      "DisplayName": "CERAXLAN.HB.Business",
+      "ColorIndex": 1
+    },
+    "6f7fbb68-d7fb-4963-acfe-75bdadc84300": {
+      "ProjectGuid": "6f7fbb68-d7fb-4963-acfe-75bdadc84300",
+      "DisplayName": "CERAXLAN.HB.WebApi",
+      "ColorIndex": 2
+    },
+    "f266087f-73cb-4da4-9345-522bf7fec97b": {
+      "ProjectGuid": "f266087f-73cb-4da4-9345-522bf7fec97b",
+      "DisplayName": "CERAXLAN.HB.DataAccess",
+      "ColorIndex": 3
+    },
+    "947da256-534b-46d9-81c4-a96e46e7dfe3": {
+      "ProjectGuid": "947da256-534b-46d9-81c4-a96e46e7dfe3",
+      "DisplayName": "CERAXLAN.HB.Entities",
+      "ColorIndex": 4
+    },
+    "cc216214-09b4-4118-81fb-297068bc2839": {
+      "ProjectGuid": "cc216214-09b4-4118-81fb-297068bc2839",
+      "DisplayName": "CERAXLAN.HB.Business.Tests",
+      "ColorIndex": 5
+    },
+    "f3d8b7a3-96b3-4fff-a879-86ac8c5c0952": {
+      "ProjectGuid": "f3d8b7a3-96b3-4fff-a879-86ac8c5c0952",
+      "DisplayName": "CERAXLAN.HB.DataAccess.Tests",
+      "ColorIndex": 6
+    },
+    "a026ead0-b542-4603-aa1c-5f50eb79d44b": {
+      "ProjectGuid": "a026ead0-b542-4603-aa1c-5f50eb79d44b",
+      "DisplayName": "CERAXLAN.HB.ConsoleApp",
+      "ColorIndex": 7
+    }
+  },
+  "NextColorIndex": 8
+}
